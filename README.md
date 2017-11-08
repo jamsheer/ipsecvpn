@@ -31,10 +31,10 @@ First, prepare your Linux server[*](#quick-start-note) with a fresh install of U
 Use this one-liner to set up an IPsec VPN server:
 
 ```bash
-wget https://git.io/ipsecvpn -O vpnsetup.sh && sudo sh vpnsetup.sh
+wget https://git.io/ipsecvpnubuntu -O vpnsetup.sh && sudo sh vpnsetup.sh
 ```
 
-If using CentOS, replace the link above with `https://git.io/ipsecvpn-centos`.
+If using CentOS, replace the link above with `https://git.io/ipsecvpn-cent`.
 
 Your VPN login details will be randomly generated, and displayed on the screen when finished.
 
@@ -75,13 +75,13 @@ To install the VPN, please choose one of the following options:
 **Option 1:** Have the script generate random VPN credentials for you (will be displayed when finished):
 
 ```bash
-wget https://git.io/ipsecvpn -O vpnsetup.sh && sudo sh vpnsetup.sh
+wget https://git.io/ipsecvpnubuntu -O vpnsetup.sh && sudo sh vpnsetup.sh
 ```
 
 **Option 2:** Edit the script and provide your own VPN credentials:
 
 ```bash
-wget https://git.io/ipsecvpn -O vpnsetup.sh
+wget https://git.io/ipsecvpnubuntu -O vpnsetup.sh
 nano -w vpnsetup.sh
 [Replace with your own values: YOUR_IPSEC_PSK, YOUR_USERNAME and YOUR_PASSWORD]
 sudo sh vpnsetup.sh
@@ -92,7 +92,7 @@ sudo sh vpnsetup.sh
 ```bash
 # All values MUST be placed inside 'single quotes'
 # DO NOT use these special characters within values: \ " '
-wget https://git.io/ipsecvpn -O vpnsetup.sh && sudo \
+wget https://git.io/ipsecvpnubuntu -O vpnsetup.sh && sudo \
 VPN_IPSEC_PSK='your_ipsec_pre_shared_key' \
 VPN_USER='your_vpn_username' \
 VPN_PASSWORD='your_vpn_password' sh vpnsetup.sh
@@ -104,7 +104,7 @@ VPN_PASSWORD='your_vpn_password' sh vpnsetup.sh
 
 First, update your system with `yum update` and reboot. This is optional, but recommended.
 
-Follow the same steps as above, but replace `https://git.io/ipsecvpn` with `https://git.io/ipsecvpn-centos`.
+Follow the same steps as above, but replace `https://git.io/ipsecvpnubuntu` with `https://git.io/ipsecvpn-cent`.
 
 ## Next steps
 
