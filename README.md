@@ -141,16 +141,6 @@ When connecting via `IPsec/L2TP`, the VPN server has IP `192.168.42.1` within th
 
 The scripts will backup existing config files before making changes, with `.old-date-time` suffix.
 
-## Upgrade Libreswan
-
-The additional scripts <a href="extras/vpnupgrade.sh" target="_blank">vpnupgrade.sh</a> and <a href="extras/vpnupgrade_centos.sh" target="_blank">vpnupgrade_centos.sh</a> can be used to upgrade <a href="https://libreswan.org" target="_blank">Libreswan</a> (<a href="https://github.com/libreswan/libreswan/blob/master/CHANGES" target="_blank">changelog</a> | <a href="https://lists.libreswan.org/mailman/listinfo/swan-announce" target="_blank">announce</a>). Edit the `SWAN_VER` variable as necessary. Check which version is installed: `ipsec --version`.
-
-```bash
-# Ubuntu & Debian
-wget https://git.io/ipsecvpnupgrade -O vpnupgrade.sh
-# CentOS & RHEL
-wget https://git.io/ipsecvpnupgrade-centos -O vpnupgrade.sh
-```
 
 ## Bugs & Questions
 
